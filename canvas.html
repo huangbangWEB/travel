@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var canves=document.getElementById("my_canves");
+				context=canves.getContext("2d");
+//				矩形
+				context.fillStyle="aquamarine";
+				context.fillRect(0,0,100,100);
+//				划线
+				context.moveTo(10,10);
+				context.lineTo(20,40);
+				context.lineTo(80,60);
+				context.lineTo(90,90);
+				context.stroke();
+//				画圆
+				context.beginPath();
+				context.arc(50,50,50,0,2*Math.PI);
+				context.stroke();
+//				写内容
+				context.font="20px Arial";
+				context.fillStyle="red";
+//				实线
+				context.fillText("hello world",1,20);
+//				虚线
+				context.strokeText("hello world",1,50);
+				
+//				渐变
+				linear=context.createLinearGradient(0,0,200,200);
+				linear.addColorStop(0,"red");
+				linear.addColorStop(1,"blue");
+				
+				context.fillStyle=linear;
+				context.fillRect(0,100,200,100);
+				context.fillRect(100,0,100,200);
+				
+				var my_img=document.getElementById("my_img");
+				context.drawImage(my_img,200,0);
+				
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="my_canves" width="1000" height="400" style="border: solid 1px red;">
+			你的浏览器不支持canvas</canvas>
+		<img src="../img/剪头.jpg"/ id="my_img">
+	</body>
+</html>

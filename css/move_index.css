@@ -1,0 +1,154 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	font-size: 625%;
+}
+body{
+	color: #888;
+	font-size: .13rem;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+.clearfix:after{
+	content: '.';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+div,figure{
+	/*box-sizing: border-box;*/
+}
+img{
+	max-width: 100%;
+	/*防止出现inline因为空白代码导致的白色条*/
+	display: block;
+}
+
+#adver img{
+	margin: .35rem auto 0 auto;
+}
+#header{
+	height: .35rem;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+#header h2{
+	display: none;
+}
+#header li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: .34rem;
+}
+#header a{
+	color: white;
+	display: block;
+	font-size: .16rem;
+}
+#header .select{
+	background-color: #000;
+}
+#search {
+	max-width: 6.4rem;
+	padding: 0.01rem;
+	height: .3rem;
+	background-color: #eee;
+	text-align: center;
+	position: relative;
+	margin: 0px auto;
+}
+#search input[type="text"]{
+	border: solid .01px #ccc;
+	border-radius: 5px;
+	outline: none;
+	height: .26rem;
+	width: 98%;
+	padding-left: .1rem;
+}
+#search input[type="button"]{
+	width: .5rem;
+	border-radius: 5px;
+	height: .26rem;
+	border: solid .01px #ccc;
+	cursor: pointer;
+	position: absolute;
+	right: .3%;
+	outline: none;
+	top: .02rem;
+}
+#tour{
+	text-align: center;
+}
+#tour h2{
+	color: #666;
+	margin-bottom: .05rem;
+	font-weight: initial;
+}
+#tour h3{
+	font-weight: initial;
+}
+#tour .figtrue{
+	margin: .05rem auto 0rem auto;
+	max-width: 6.4rem;
+}
+#tour .figtrue figure{
+	/*float: left;*/
+	width: 50%;
+	padding: .01rem;
+	background-color: #eee;
+	
+}
+#tour .figtrue figcaption{
+	text-align: left;
+	margin: .03rem .03rem;
+	white-space: nowrap;
+}
+#tour .figtrue h4{
+	font-weight: initial;
+	/*需要配合overflow: hidden才能使用*/
+	/*overflow: hidden;*/
+	/*ps:text-overflow需要配合overflow：hidden进行使用，且不可继承*/
+	/*text-overflow: ellipsis;*/
+}
+#tour .figtrue p{
+	/*overflow: hidden;*/
+	/*text-overflow: ellipsis;*/	
+}
+#tour .figtrue .info{
+	margin-top: .02rem;
+}
+#tour .figtrue .price{
+	color: #f60;
+	float: left;
+}
+#tour .figtrue .sat{
+	font-style: normal;
+	float: right;
+	margin-top: .02rem;
+}
+#tour .figtrue strong{
+	font-size: .17rem;
+}
+#footer{
+	margin:0 auto;
+	max-width: 6.4rem;
+	text-align: center;
+	color: #888;
+	background-color: #333;
+	padding: .05rem 0rem;
+}
+#footer .top{
+	padding-bottom: .02rem;
+}
+

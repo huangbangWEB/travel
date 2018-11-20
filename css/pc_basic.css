@@ -1,0 +1,92 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	min-width: 1280px;
+}
+a{
+	color: #888;
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+#header {
+	background-color: #333;
+}
+#header .center{
+	margin: 0px auto;
+	height: 70px;
+	width: 1263px;
+}
+#header h1{
+	float: left;
+	height: 100%;
+	width: 240px;
+	text-indent: -9999px;
+	background-image: url(../img/logo.png);
+}
+#header h2{
+	display: none;
+}
+#header ul{
+	float:right;
+	margin-right: 100px;
+}
+#header li{
+	float: left;
+	width: 120px;
+	text-align: center;
+	line-height: 70px;
+}
+#header a{
+	color: #ddd;
+	font-size: 20px;
+	display: block;
+}
+#header a:hover{
+	background-color: #000;
+}
+#header .select{
+	background-color: #000;
+}
+
+#footer{
+	clear: both;
+	text-align: center;
+	margin-top: 20px;
+}
+#footer .top{
+	background-color: #333;
+}
+#footer .top .box{
+	text-align: left;
+	width: 410px;
+	height: 280px;
+	display: inline-block;
+	/*并不是默认居顶的,直接强制居顶*/
+	vertical-align: top; 
+}
+#footer .top h2,#footer .top ul{
+	margin-left: 20px;
+}
+#footer .top h2{
+	margin-top: 15px;
+	padding-bottom: 10px;
+	font-size: 30px;
+	border-bottom: dashed 1px #888;
+	color: #eee;
+	font-weight: initial;
+}
+#footer .top ul{
+	font-size: 18px;
+	line-height: 2;
+	color: #888;
+}
+#footer .bottom{
+	height: 80px;
+	line-height: 80px;
+	background-color: #111;
+	color: #888;
+}

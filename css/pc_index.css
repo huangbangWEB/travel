@@ -1,0 +1,113 @@
+#search{
+	height: 600px;
+	width: 100%;
+	background:url(../img/search.jpg) no-repeat center;
+	position:relative;
+}
+#search .center{
+	height: 60px;
+	width: 600px;
+	background-color: #000;
+	border-radius: 10px;
+	opacity: 0.6;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*因为宽度100%自适应，所以无法使用↓*/
+	/*margin: 0 30px 300px 0;*/
+	margin: -30px 0 0 -300px;
+	
+}
+#search input{
+	width: 446px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 10px;
+	margin: -27px 0 0 -296px;
+	padding: 0 10px;
+	font-size: 24px;
+	background-color: #eee;
+	color: #444;
+	outline: none;
+	border:solid 1px black;
+}
+#search button{
+	width: 120px;
+	height: 54px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: -27px 0 0 175px;
+	font-size: 24px;
+	color: #666;
+	border:solid 1px black;
+	outline: none;
+	background-color: #eee;
+}
+#tour {
+	margin: 40px auto 0px auto;
+	text-align: center;
+	color: #666;
+	width: 1263px;
+}
+#tour h2{
+	font-size: 50px;
+}
+#tour p{
+	margin-top: 10px;
+	font-size: 16px;
+}
+#tour figure{
+	border: solid 1px #ddd;
+	width: 380px;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 30px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align:left;
+	line-height: 1.5;
+	position:relative;
+	margin: 10px;
+}
+#tour figure img{
+	vertical-align: middle;
+}
+#tour strong{
+	color: #000;
+	font-weight: normal;
+	font-size: 15px;
+}
+#tour .bottom{
+	margin-top: 8px;
+}
+#tour .price{
+	color: #f60;
+}
+#tour .price b{
+	font-size: 18px;
+}
+#tour .sat{
+	float: right;
+	font-style: initial;
+	color: #888;
+	margin-top: 3px;
+}
+#tour .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background-color: #59b200;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+}
+
+

@@ -1,0 +1,103 @@
+#box .list{
+	color: #666;
+	float: left;
+	width: 900px;
+	font-size: 20px;
+}
+.list h2{
+	color: #333;
+	font-size: 30px;
+	font-weight: initial;
+	padding-bottom: 20px;
+	border-bottom: dashed 1px #666;
+}
+.list p{
+	margin-top: 20px;
+}
+.list mark{
+	padding: 5px;
+	color: white;
+	background-color: green;
+	border-radius: 10px;
+}
+.list .right,.list .left{
+	margin-top: 20px;
+	width: 360px;
+	float: left;
+	
+}
+.list .bottom{
+	margin-top: 20px;
+	width: 112px;
+	height: 112px;
+	line-height: 112px;
+	float: left;
+}
+.list input{
+	margin: 7px 0px 7px 20px;
+	height: 40px;
+	font-size: 20px;
+	width: 230px;
+	border-radius: 5px;
+	color: #666;
+	padding-left: 10px;
+	border: solid 1px #ddd;
+}
+.list input[type=button]{
+	width: 100px;
+	height: 100px;
+	background-color: #f60;
+	padding: 0px;
+	cursor: pointer;
+}
+.list .new{
+	margin-top: 20px;
+	
+}
+.list li{
+	float: left;
+	width: 60px;
+	margin: 20px 0px;
+	text-align: center;
+}
+.list li:first-child{
+	width: 100px;
+}
+.list li:nth-child(2),.list li:hover{
+	background-color: green;
+	border-radius: 10px;
+	color: white;
+}
+.list li:first-child:hover{
+	background-color: white;
+	color: #666;
+}
+.list table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	
+}
+.list tr{
+	border: solid 1px #eee;
+}
+.list th,td{
+	height: 50px;
+	line-height: 50px;
+}
+.list tr:hover{
+	background-color: #eee;
+}
+.list .price{
+	color: #f60;
+}
+.list .reserve{
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #f60;
+	border-radius: 10px;
+	color: white;
+	
+}

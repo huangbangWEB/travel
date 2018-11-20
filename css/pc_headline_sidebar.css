@@ -1,0 +1,79 @@
+#headline {
+	height: 300px;
+	position: relative;	
+	background: linear-gradient(to right bottom,rgba(0,0,0,0.7),rgba(0,0,0,0)),url(../img/headline.jpg) no-repeat center;
+}
+#headline hgroup{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0px 0px -600px;
+	color: #ddd;
+	text-shadow: 1px 1px 1px black;
+}
+#headline h2{
+	font-size: 35px;
+}
+#headline h3{
+	font-size: 20px;
+}
+#box{
+	margin: 30px auto;
+	width: 1263px;
+}
+#box .sidebar{
+	float: right;
+	width: 340px;
+	text-align: center;
+}
+.sidebar h2{
+	padding-left: 10px;
+	height: 40px;
+	color: #666;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: 300;
+	text-align: left;
+	background-color: #fafafa;
+	
+}
+.sidebar .top,.sidebar .middle,.sidebar .bottom{
+	border: solid 1px #eee;
+	margin-bottom: 10px;
+}
+.sidebar .top .link,.sidebar .middle .figure,.sidebar .bottom .inquire{
+	padding: 10px 0px;
+}
+.sidebar .top li{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	background-color: #eee;
+	text-align: left;
+	margin: 2px 0px;
+}
+.sidebar .top a{
+	color: #888;
+	padding-left: 8px;
+	display: block;
+}
+.sidebar .top a:hover{
+	color: white;
+	background-color: green;
+}
+.sidebar .middle figure{
+	display: inline-block;
+	color: #666;
+	margin: 5px 3px;
+}
+.sidebar .bottom a{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 2px 1px;
+	color: #888;
+	display: inline-block;
+	background: url(../img/trea1.png) no-repeat 10px center #eee;
+	/*background-position: 10px center;*/
+}

@@ -1,0 +1,288 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+}
+a{
+	color: #888;
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+input,button{
+	outline: none;
+}
+button{
+	cursor: pointer;
+}
+.clearfix:after{
+	content: '.';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+#header {
+	background-color: #333;
+}
+#header .center{
+	margin: 0px auto;
+	height: 70px;
+	max-width: 1263px;
+}
+#header h1{
+	float: left;
+	height: 100%;
+	width: 30%;
+	text-indent: -9999px;
+	background: url(../img/logo.png) no-repeat;
+}
+#header h2{
+	display: none;
+}
+#header ul{
+	float:right;
+	width: 70%;
+}
+#header li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	line-height: 70px;
+}
+#header a{
+	color: #ddd;
+	font-size: 25px;
+	display: block;
+}
+#header .select,#header a:hover{
+	background-color: #000;
+}
+
+#search{
+	position:relative;
+}
+#search img{
+	width: 100%;
+}
+#search .center{
+	height: 14%;
+	top: 43%;
+	width: 60%;
+	left: 20%;
+	background-color: #000;
+	border-radius: 10px;
+	opacity: 0.6;
+	position: absolute;
+	/*因为宽度100%自适应，所以无法使用↓*/
+	/*margin: 0 30px 300px 0;*/
+	min-height: 22px;
+}
+#search .copy{
+		height: 12%;
+		top: 44%;
+		width: 58%;
+		left: 21%;
+		opacity: 1;
+		background-color: transparent;
+		min-height: 20px;
+	}
+#search input{
+	width: 83%;
+	font-size: 24px;
+	color: #444;
+	background-color: #eee;
+	border-radius: 10px;
+	display: inline-block;
+	height: 100%;
+	border: solid 1px black;
+	float: left;
+}
+#search button{
+	width: 16%;
+	height: 100%;
+	border-radius: 10px;
+	font-size: 24px;
+	color: #666;
+	background-color: #eee;
+	float: right;
+	border: solid 1px black;
+	
+}
+#tour {
+	margin: 0px auto 0px auto;
+	text-align: center;
+	color: #666;
+	max-width: 1263px;
+}
+#tour h2{
+	font-size: 50px;
+}
+#tour p{
+	margin-top: 10px;
+	font-size: 16px;
+}
+#tour figure{
+	border: solid 1px #ddd;
+	width: 32%;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align:left;
+	line-height: 1.5;
+	position:relative;
+}
+#tour figure img{
+	width: 100%;
+	vertical-align: middle;
+}
+#tour strong{
+	color: #000;
+	font-weight: normal;
+	font-size: 15px;
+}
+#tour .bottom{
+	margin-top: 8px;
+}
+#tour .price{
+	color: #f60;
+}
+#tour .price b{
+	font-size: 18px;
+}
+#tour .sat{
+	float: right;
+	font-style: initial;
+	color: #888;
+	margin-top: 3px;
+}
+#tour .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background-color: #59b200;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+}
+#footer{
+	text-align: center;
+}
+#footer .top{
+	background-color: #333;
+	width: 100%;
+	float: left;
+}
+#footer .top .box{
+	text-align: left;
+	width: 33.33%;
+	float: left;
+}
+#footer .top h2{
+	font-size: 25px;
+	border-bottom: dashed 1px #888;
+	color: #eee;
+	font-weight: initial;
+}
+#footer .top ul{
+	font-size: 18px;
+	line-height: 2;
+	color: #888;
+}
+#footer .bottom{
+	height: 40px;
+	line-height: 40px;
+	background-color: #111;
+	color: #888;
+}
+
+/*在 768 和 991 像素之间的屏幕里，小屏幕，主要是 PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#header a,#search input,#search button,#footer .top h2{
+		font-size: 20px;
+	}
+	#tour h2{
+		font-size: 35px;
+	}
+	#footer .top ul{
+		font-size: 15px;
+	}
+}
+/*在 480 和 767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header h1,#footer span{
+		display: none;
+	}
+	#header a,#search input,#search button,#footer .top h2{
+		font-size: 16px;
+	}
+	#footer .top ul,#footer .bottom{
+		font-size: 13px;
+	}
+	#tour h2{
+		font-size: 30px;
+	}
+	#tour figure{
+		width: 49%;
+	}
+	#header .center{
+		height: 40px;
+	}
+	#header ul{
+		width: 100%;
+	}
+	#header li{
+		float: left;
+		width: 20%;
+		text-align: center;
+		line-height: 40px;
+	}
+	#search input,#search button{
+		border-radius: 5px;
+	}
+}
+/*在小于 480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#footer .top,#header h1,#header li span,#footer span{
+		display: none;
+	}
+	#header a,#search input,#search button{
+		border-radius: 5px;
+		font-size: 12px;
+	}
+	#header .center{
+		height:30px;
+	}
+	
+	#header ul{
+		width: 100%;
+	}
+	#header li{
+		float: left;
+		width: 20%;
+		text-align: center;
+		line-height: 30px;
+	}
+	#tour h2{
+		font-size: 20px;
+	}
+	#tour p{
+		font-size: 13px;
+	}
+	#tour figure{
+		width: 100%;
+	}
+	#footer .bottom{
+		font-size: 12px;
+		height: 25px;
+		line-height: 25px;
+	}
+}

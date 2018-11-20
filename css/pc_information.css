@@ -1,0 +1,144 @@
+
+#box .list{
+	float: left;
+	width: 900px;
+}
+.list .infor{
+	height: 43px;
+	background-color: #eee;
+}
+.list .infor li{
+	float: left;
+	line-height: 43px;
+	text-align: center;
+}
+.list .infor .left li{
+	/*border: solid 1px black;*/
+	width: 150px;
+}
+.list .infor .left li:first-child,.list .infor .left li:hover{
+	border-top: solid 2px green;
+	background-color: white;
+	position: relative;
+	top: -2px;
+}	
+.list .infor .right{
+	float: right;
+}
+.list .infor .right li{
+	display: inline-block;
+	height: 34px;
+	line-height: 40px;
+	width: 40px;
+	margin-right: 20px;
+	float: left;
+}
+.list .infor .right li:first-child a,.list .infor .right a:hover{
+	padding: 4px;
+	color: white;
+	background-color: green;
+}
+.list .tour{
+	display: block;
+	/*block与inline-block的上下margin不一样*/
+	margin: 15px 0px;
+	height: 230px;
+	position: relative;
+	border: solid 1px #eee;
+}
+.list .tour figcaption{
+	width: 518px;
+	height: 230px;
+	float: right;
+}
+.list .tour img{
+	vertical-align: middle;
+	float: left;
+}
+.list .tour header{
+	width: 300px;
+	color: #666;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.list .tour header h2{
+	font-weight: initial;
+}
+.list .tour header p{
+	margin-top: 15px;
+}
+.list .tour header mark{
+	background-color: white;
+	border: solid 1px green;
+	border-radius: 5px;
+	color: green;
+}
+.list .figure time{
+	color: green;
+}
+.list .tour footer{
+	color: #666;
+	line-height: 30px;
+	height: 30px;
+	width: 518px;
+	background: #eee;
+	text-indent: 20px;
+	position: absolute;
+	bottom: 0;
+}
+.list .tour .buy{
+	position: absolute;
+	top: 40px;
+	left: 720px;
+}
+.list .tour .price{
+	color: #f60;
+}
+.list .tour strong{
+	font-size: 35px;
+}
+.list .tour del{
+	color: #666;
+}
+.list .tour .reserve{
+	margin-top: 15px;
+	color: white;
+	font-size: 22px;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #f60;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.list .tour .discount{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 52px;
+	height: 52px;
+	background:url(../img/disc.png);
+	
+}
+.list .tour .discount span{
+	transform:rotate(45deg);
+	display: block;
+	font-size: 15px;
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	color: #f60;
+}
+.list .type{
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #59b200;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+}

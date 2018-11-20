@@ -1,0 +1,143 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	font-size: 625%;
+}
+body{
+	color: #888;
+	font-size: .13rem;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+.clearfix:after{
+	content: '.';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+div,figure{
+	box-sizing: border-box;
+}
+#header{
+	height: .35rem;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+#header h2{
+	display: none;
+}
+#header li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: .34rem;
+}
+#header a{
+	color: white;
+	display: block;
+	font-size: .16rem;
+}
+#header .select{
+	background-color: #000;
+}
+img{
+	max-width: 100%;
+	/*防止出现inline因为空白代码导致的白色条*/
+	display: block;
+}
+#adver img{
+	margin: .35rem auto 0 auto;
+}
+#information{
+	margin: 0 auto;
+	max-width: 6.4rem;
+}
+#information h2{
+	font-size: .22rem;
+	padding: .05rem;
+	color: #666;
+	font-weight: 600;
+	border-bottom: dashed 1px #999;
+}
+#information figure{
+	display: block;
+	position: relative;
+	margin: .1rem .05rem;
+}
+#information figure:after{
+	content: '.';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+#information img{
+	width: 50%;
+	float: left;
+}
+#information figcaption{
+	float: right;
+	width: 49%;
+	
+}
+#information h3{
+	font-size: .2rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	font-weight: 600;
+	
+}
+#information .introduce{
+	font-size: .18rem;
+	/*overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	max-height: .5rem;
+	-webkit-box-orient: vertical;*/
+}
+#information .price{
+	font-size: .18rem;
+	position: absolute;
+	bottom: 0rem;
+	color: #FF6600;
+}
+#information .price strong{
+	font-size: .23rem;
+}
+#footer{
+	margin:0 auto;
+	max-width: 6.4rem;
+	text-align: center;
+	color: #888;
+	background-color: #333;
+	padding: .05rem 0rem;
+}
+#footer .top{
+	padding-bottom: .02rem;
+}
+@media (min-width: 1px) and (max-width: 420px ){
+	#information h3{
+		font-size: .17rem;
+	}
+	#information .introduce{
+		font-size: .14rem;
+	}
+	#information .price{
+		font-size: .13rem;
+	}
+	#information .price strong{
+		font-size: .16rem;
+	}
+}
